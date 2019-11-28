@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="11dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="11dp">
+
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/imprint" />
+
+            <!--
+            android:layout_below="@+id/name_text_view"-->
+
+
+
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:hint="@string/textViewApodo"
+            android:textColor="@color/name_text_color"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/textViewAltaProt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@id/textViewNombre"
+            android:gravity="right"
+            android:hint="@string/textViewAltaprot"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

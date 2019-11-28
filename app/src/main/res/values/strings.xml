@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <string name="textViewApodo">Apodo</string>
+    <string name="textViewAltaprot">Altaprot</string>
+    <string name="textView">N</string>
+
+</resources>
