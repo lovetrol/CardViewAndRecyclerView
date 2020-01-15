@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.textclassifier.TextLinks;
 import android.widget.Toast;
 
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String URL_Usuarios = "http://www.infecto.mx/imprint/services/service.php";
 
-    //http://infecto.mx/imprint/services/service.php
+
     List<Usuarios> usuariosList;
 
     RecyclerView recyclerView;
@@ -38,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // instancio recycler
-
+        // antes instancio recycler
         usuariosList = new ArrayList<>();
 
         loadUsers();
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 usuariosList.add(new Usuarios(
                                         //usuario.getInt("id"),
-                                        usuario.getString("usuario_nickname"),
+                                        usuario.getString("usuario_nombre"),
                                         usuario.getString("usuario_altaprot"),
                                         usuario.getString("usuario_sede")
                                 ));
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                             recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
                             recyclerView.setHasFixedSize(true);
                             recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+
                             recyclerView.setAdapter(adaptador);
 
 
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         Volley.newRequestQueue(this).add(stringRequest);
 
-
-
     }
+
+
 }

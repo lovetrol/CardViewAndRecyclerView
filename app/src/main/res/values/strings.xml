@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">RecyclerView</string>
-    <string name="textViewApodo">Apodo</string>
+    <string name="edtiTextNombreUsuario">Nombre de usuario</string>
     <string name="textViewAltaprot">Altaprot</string>
-    <string name="textView">N</string>
+    <string name="textViewRNombre">Nombre</string>
+    <string name="textVireRApellipat">Apellido Paterno</string>
+    <string name="textViewRApellimat">Apellido materno</string>
+    <string name="textViewRNombreUsuario">Nombre de usuario</string>
+    <string name="textViewRPass">pass</string>
+    <string name="textViewRDirección">Dirección</string>
+    <string name="textViewRSedeRecolección">Sede recolección</string>
+    <string name="textViewRSedeAtención">Sede atención</string>
+
+
 
 </resources>

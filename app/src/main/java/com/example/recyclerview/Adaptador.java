@@ -13,16 +13,20 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class Adaptador extends RecyclerView.Adapter<Adaptador.UsuariosViewHolder> {
+public class Adaptador extends RecyclerView.Adapter<Adaptador.UsuariosViewHolder>  {
 
     private Context mContext;
     private List<Usuarios> usuariosList;
+
+    private View.OnClickListener listener;
 
 
     class UsuariosViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewNombre, textViewAltaprot;
         //ImageView imageView;
+
+
 
         public UsuariosViewHolder(View itemView) {
             super(itemView);
@@ -67,9 +71,10 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.UsuariosViewHolder
 
     }
 
-
     @Override
     public int getItemCount() {
         return usuariosList.size();
     }
+
+
 }
